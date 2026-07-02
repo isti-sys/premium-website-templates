@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Espresso House favicon">
+  <rect width="64" height="64" rx="16" fill="#3A2A24"/>
+  <path d="M20 22h24c5 0 9 4 9 9v4c0 7-5 13-12 14l1 5H24l1-5C19 48 14 42 14 35v-4c0-5 4-9 9-9Zm2 8c0-2 1-4 4-4h12c2 0 4 2 4 4v1c0 3-2 6-5 7H27c-3-1-5-4-5-7v-1Z" fill="#C49A4A"/>
+  <path d="M24 14h16" stroke="#FDFCFB" stroke-width="3" stroke-linecap="round"/>
+</svg>

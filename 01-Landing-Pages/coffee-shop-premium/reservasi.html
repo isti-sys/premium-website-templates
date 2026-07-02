@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi | Espresso House</title>
+    <meta name="description" content="Reservasi meja di Espresso House untuk santapan kopi premium dan suasana hangat.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#3A2A24">
+    <meta name="msapplication-config" content="browserconfig.xml">
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: "#3A2A24",
+                        beige: "#E9DDCF",
+                        gold: "#C49A4A",
+                        cream: "#FDFCFB"
+                    },
+                    fontFamily: {
+                        heading: ["Playfair Display", "serif"],
+                        body: ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-cream font-body text-gray-700">
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition duration-300">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="text-3xl font-heading font-bold text-white">
+                    Espresso<span class="text-gold">House</span>
+                </a>
+
+                <ul class="hidden md:flex items-center gap-10">
+                    <li><a href="index.html" class="text-white hover:text-gold transition">Home</a></li>
+                    <li><a href="about.html" class="text-white hover:text-gold transition">About</a></li>
+                    <li><a href="menu.html" class="text-white hover:text-gold transition">Menu</a></li>
+                    <li><a href="gallery.html" class="text-white hover:text-gold transition">Gallery</a></li>
+                    <li><a href="Review.html" class="text-white hover:text-gold transition">Review</a></li>
+                    <li><a href="reservasi.html" class="text-gold font-semibold transition">Reservasi</a></li>
+                </ul>
+
+                <button id="menuButton" class="text-white text-2xl md:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobileMenu" class="hidden bg-white shadow-xl">
+            <a href="index.html" class="block px-8 py-4 hover:bg-beige">Home</a>
+            <a href="about.html" class="block px-8 py-4 hover:bg-beige">About</a>
+            <a href="menu.html" class="block px-8 py-4 hover:bg-beige">Menu</a>
+            <a href="gallery.html" class="block px-8 py-4 hover:bg-beige">Gallery</a>
+            <a href="Review.html" class="block px-8 py-4 hover:bg-beige">Review</a>
+            <a href="reservasi.html" class="block px-8 py-4 hover:bg-beige text-gold font-semibold">Reservasi</a>
+        </div>
+    </header>
+
+    <section class="relative min-h-screen flex items-center overflow-hidden">
+        <img src="assets/images/hero.webp" alt="Interior Espresso House" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-10 w-full py-24">
+            <div class="max-w-3xl">
+                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur text-white border border-white/20">
+                    <i class="fa-solid fa-calendar-check text-gold"></i>
+                    Reserve Your Table
+                </span>
+                <h1 class="font-heading text-5xl lg:text-7xl leading-tight text-white mt-8">
+                    Booking meja jadi lebih mudah,
+                    <span class="text-gold">lebih nyaman.</span>
+                </h1>
+                <p class="text-gray-200 text-lg mt-8 max-w-2xl leading-8">
+                    Pilih waktu kunjungan, tentukan jumlah tamu, dan kami akan menyiapkan pengalaman kopi terbaik untuk Anda.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
+                <div class="bg-white rounded-[32px] shadow-2xl p-8 lg:p-10 border border-beige/60">
+                    <p class="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-4">Form Reservasi</p>
+                    <h2 class="font-heading text-4xl text-espresso">Pesan meja Anda</h2>
+                    <p class="mt-4 text-gray-600 leading-8">
+                        Isi formulir di bawah ini untuk reservasi meja di Espresso House. Tim kami akan mengonfirmasi jadwal Anda sesegera mungkin.
+                    </p>
+
+                    <form class="mt-8 space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-espresso mb-2">Nama Lengkap</label>
+                                <input type="text" class="w-full rounded-2xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="Contoh: Maya Putri">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-espresso mb-2">Nomor Telepon</label>
+                                <input type="tel" class="w-full rounded-2xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="08xxxxxxxxxx">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-espresso mb-2">Email</label>
+                                <input type="email" class="w-full rounded-2xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="nama@email.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-espresso mb-2">Jumlah Tamu</label>
+                                <select class="w-full rounded-2xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold">
+                                    <option>1 Orang</option>
+                                    <option>2 Orang</option>
+                                    <option>3 Orang</option>
+                                    <option>4 Orang</option>
+                                    <option>5 Orang</option>
+                                    <option>6+ Orang</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-espresso mb-2">Tanggal</label>
+                                <input type="date" class="w-full rounded-2xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-espresso mb-2">Jam</label>
+                                <input type="time" class="w-full rounded-2xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-espresso mb-2">Acara / Kebutuhan</label>
+                            <select class="w-full rounded-2xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold">
+                                <option>Meeting Santai</option>
+                                <option>Date Night</option>
+                                <option>Birthday / Celebration</option>
+                                <option>Work From Coffee</option>
+                                <option>Lainnya</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-espresso mb-2">Catatan Tambahan</label>
+                            <textarea rows="4" class="w-full rounded-2xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="Contoh: meja dekat jendela, vegetarian menu, dll."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-gold text-white px-6 py-3 rounded-full font-semibold hover:scale-[1.01] transition">
+                            Kirim Reservasi
+                        </button>
+                    </form>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-white rounded-[32px] shadow-xl p-8 border border-beige/60">
+                        <p class="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-4">Informasi</p>
+                        <h3 class="font-heading text-3xl text-espresso">Kami siap menerima Anda</h3>
+                        <div class="mt-6 space-y-4 text-gray-600">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot text-gold mt-1"></i>
+                                <p>Jl. Citarum No. 18, Jakarta Selatan</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-clock text-gold mt-1"></i>
+                                <p>Senin - Minggu, 07.00 - 22.00</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-phone text-gold mt-1"></i>
+                                <p>+62 812 3456 7890</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F8F5F2] rounded-[32px] p-8 border border-beige/60">
+                        <h3 class="font-heading text-2xl text-espresso">Kenapa reservasi?</h3>
+                        <ul class="mt-5 space-y-3 text-gray-600">
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-gold mt-1"></i><span>Jaminan meja terbaik untuk kunjungan Anda.</span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-gold mt-1"></i><span>Persiapan menu khusus sesuai kebutuhan.</span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-gold mt-1"></i><span>Suasana yang lebih nyaman untuk kumpul dan bekerja.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-espresso text-white py-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-sm text-white/80">© 2026 Espresso House. All rights reserved.</p>
+            <div class="flex gap-4 text-sm text-white/80">
+                <a href="index.html" class="hover:text-gold transition">Home</a>
+                <a href="about.html" class="hover:text-gold transition">About</a>
+                <a href="reservasi.html" class="hover:text-gold transition">Reservasi</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

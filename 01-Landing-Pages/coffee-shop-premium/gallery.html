@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Espresso House</title>
+    <meta name="description" content="Lihat suasana, visual interior, dan momen istimewa di Espresso House.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#3A2A24">
+    <meta name="msapplication-config" content="browserconfig.xml">
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: "#3A2A24",
+                        beige: "#E9DDCF",
+                        gold: "#C49A4A",
+                        cream: "#FDFCFB"
+                    },
+                    fontFamily: {
+                        heading: ["Playfair Display", "serif"],
+                        body: ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-cream font-body text-gray-700">
+
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition duration-300">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="text-3xl font-heading font-bold text-white">Espresso<span class="text-gold">House</span></a>
+
+                <ul class="hidden md:flex items-center gap-10">
+                    <li><a href="index.html" class="text-white hover:text-gold transition">Home</a></li>
+                    <li><a href="menu.html" class="text-white hover:text-gold transition">Menu</a></li>
+                    <li><a href="about.html" class="text-white hover:text-gold transition">About</a></li>
+                    <li><a href="gallery.html" class="text-white hover:text-gold transition">Gallery</a></li>
+                    <li><a href="Review.html" class="text-white hover:text-gold transition">Review</a></li>
+                    <li><a href="reservasi.html" class="bg-gold text-white px-5 py-3 rounded-full hover:scale-105 transition">Reservasi</a></li>
+                </ul>
+
+                <button id="menuButton" class="text-white text-2xl md:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobileMenu" class="hidden bg-white shadow-xl">
+            <a href="index.html" class="block px-8 py-4 hover:bg-beige">Home</a>
+            <a href="menu.html" class="block px-8 py-4 hover:bg-beige">Menu</a>
+            <a href="about.html" class="block px-8 py-4 hover:bg-beige">About</a>
+            <a href="gallery.html" class="block px-8 py-4 hover:bg-beige">Gallery</a>
+            <a href="Review.html" class="block px-8 py-4 hover:bg-beige">Review</a>
+            <a href="reservasi.html" class="block px-8 py-4 hover:bg-beige">Reservasi</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative min-h-[70vh] flex items-center overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80"
+                alt="Interior Espresso House"
+                class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/50"></div>
+
+            <div class="relative max-w-7xl mx-auto px-6 lg:px-10 w-full py-24">
+                <div class="max-w-3xl">
+                    <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur text-white border border-white/20">
+                        <i class="fa-solid fa-camera text-gold"></i>
+                        Koleksi Visual Espresso House
+                    </span>
+                    <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl text-white mt-6 leading-tight">
+                        Temukan <span class="text-gold">suasana</span> yang membuat setiap kunjungan terasa istimewa.
+                    </h1>
+                    <p class="text-lg text-white/80 mt-6">
+                        Dari barista yang sedang menyiapkan espresso, hingga sudut cozy yang nyaman untuk ngobrol,
+                        setiap momen kami simpan dalam satu galeri yang hangat dan elegan.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a href="reservasi.html" class="bg-gold text-white px-6 py-3 rounded-full hover:scale-105 transition">Buat Reservasi</a>
+                        <a href="menu.html" class="border border-white/30 text-white px-6 py-3 rounded-full hover:bg-white/10 transition">Lihat Menu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+                <div>
+                    <p class="text-gold font-semibold uppercase tracking-[0.25em] text-sm">Gallery</p>
+                    <h2 class="font-heading text-3xl sm:text-4xl text-espresso">Interior, menu, dan mood yang kami bangun</h2>
+                </div>
+                <p class="max-w-2xl text-gray-600">
+                    Setiap sudut dibuat untuk memberi pengalaman kopi yang lebih personal, hangat, dan penuh detail.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=900&q=80" alt="Coffee brewing station" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="group overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1499638673689-79a0b5115d87?auto=format&fit=crop&w=900&q=80" alt="Latte art on coffee" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="group overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" alt="Cozy coffee corner" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="group overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition md:col-span-2 lg:col-span-2">
+                    <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1200&q=80" alt="Coffee shop interior" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="group overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=80" alt="Coffee and pastries" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="group overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=900&q=80" alt="Barista preparing drink" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="group overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=900&q=80" alt="Warm cafe atmosphere" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
+                <div>
+                    <p class="text-gold font-semibold uppercase tracking-[0.25em] text-sm">Kenapa pengunjung suka</p>
+                    <h3 class="font-heading text-3xl sm:text-4xl text-espresso mt-3">Setiap sudut dibuat untuk suasana yang santai dan premium.</h3>
+                    <p class="text-gray-600 mt-5 leading-relaxed">
+                        Kami menggabungkan sentuhan dekorasi modern, pencahayaan hangat, dan aroma kopi segar agar setiap kunjungan terasa nyaman, elegan, dan penuh cerita.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <div class="bg-beige/70 px-5 py-4 rounded-2xl">
+                            <p class="text-2xl font-semibold text-espresso">24/7</p>
+                            <p class="text-sm text-gray-600">Open for coffee lovers</p>
+                        </div>
+                        <div class="bg-beige/70 px-5 py-4 rounded-2xl">
+                            <p class="text-2xl font-semibold text-espresso">4.9★</p>
+                            <p class="text-sm text-gray-600">Rating pelanggan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-[2rem] overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=80" alt="Coffee shop ambiance" class="w-full h-[420px] object-cover">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-espresso text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div>
+                <p class="text-gold uppercase tracking-[0.3em] text-sm">Espresso House</p>
+                <h3 class="font-heading text-3xl mt-2">Satu tegukan, seribu kenangan.</h3>
+            </div>
+            <a href="reservasi.html" class="bg-gold text-white px-6 py-3 rounded-full hover:scale-105 transition">Pesan Meja Sekarang</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

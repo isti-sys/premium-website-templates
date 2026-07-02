@@ -1,0 +1,109 @@
+/* ===================================================
+   ANIMATIONS
+=================================================== */
+
+/* Floating */
+
+@keyframes floating{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+.floating{
+
+animation:floating 4s ease-in-out infinite;
+
+}
+
+/* Fade Up */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.fade-up{
+
+animation:fadeUp .8s ease forwards;
+
+}
+
+/* Scale */
+
+.scale-hover{
+
+transition:.35s;
+
+}
+
+.scale-hover:hover{
+
+transform:scale(1.05);
+
+}
+
+/* Rotate */
+
+.rotate-hover{
+
+transition:.4s;
+
+}
+
+.rotate-hover:hover{
+
+transform:rotate(-2deg);
+
+}
+
+/* Image Zoom */
+
+.zoom{
+
+overflow:hidden;
+
+}
+
+.zoom img{
+
+transition:.5s;
+
+}
+
+.zoom:hover img{
+
+transform:scale(1.08);
+
+}

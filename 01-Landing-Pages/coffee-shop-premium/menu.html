@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Espresso House</title>
+    <meta name="description" content="Jelajahi menu kopi premium, minuman khas, dan camilan di Espresso House.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#3A2A24">
+    <meta name="msapplication-config" content="browserconfig.xml">
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: "#3A2A24",
+                        beige: "#E9DDCF",
+                        gold: "#C49A4A",
+                        cream: "#FDFCFB"
+                    },
+                    fontFamily: {
+                        heading: ["Playfair Display", "serif"],
+                        body: ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-cream font-body text-gray-700">
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition duration-300">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="text-3xl font-heading font-bold text-white">
+                    Espresso<span class="text-gold">House</span>
+                </a>
+
+                <ul class="hidden md:flex items-center gap-10">
+                    <li><a href="index.html" class="text-white hover:text-gold transition">Home</a></li>
+                    <li><a href="about.html" class="text-white hover:text-gold transition">About</a></li>
+                    <li><a href="menu.html" class="text-gold font-semibold transition">Menu</a></li>
+                    <li><a href="gallery.html" class="text-white hover:text-gold transition">Gallery</a></li>
+                    <li><a href="Review.html" class="text-white hover:text-gold transition">Review</a></li>
+                    <li><a href="reservasi.html" class="text-white hover:text-gold transition">Reservasi</a></li>
+                </ul>
+
+                <button id="menuButton" class="text-white text-2xl md:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobileMenu" class="hidden bg-white shadow-xl">
+            <a href="index.html" class="block px-8 py-4 hover:bg-beige">Home</a>
+            <a href="about.html" class="block px-8 py-4 hover:bg-beige">About</a>
+            <a href="menu.html" class="block px-8 py-4 hover:bg-beige text-gold font-semibold">Menu</a>
+            <a href="gallery.html" class="block px-8 py-4 hover:bg-beige">Gallery</a>
+            <a href="Review.html" class="block px-8 py-4 hover:bg-beige">Review</a>
+            <a href="reservasi.html" class="block px-8 py-4 hover:bg-beige">Reservasi</a>
+        </div>
+    </header>
+
+    <section class="relative min-h-[60vh] flex items-center overflow-hidden">
+        <img src="assets/images/hero.webp" alt="Espresso House menu" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-10 w-full py-24">
+            <div class="max-w-3xl">
+                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur text-white border border-white/20">
+                    <i class="fa-solid fa-mug-hot text-gold"></i>
+                    Signature Menu
+                </span>
+                <h1 class="font-heading text-5xl lg:text-7xl leading-tight text-white mt-8">
+                    Temukan favorit kopi Anda
+                    <span class="text-gold">di setiap sajian.</span>
+                </h1>
+                <p class="text-gray-200 text-lg mt-8 leading-8 max-w-2xl">
+                    Dari espresso klasik hingga minuman kreatif, kami menyajikan menu yang dipersiapkan dengan kualitas terbaik dan sentuhan seni.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <p class="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-4">Our Menu</p>
+                <h2 class="font-heading text-4xl lg:text-5xl text-espresso leading-tight">Pilihan yang pas untuk setiap momen.</h2>
+                <p class="mt-6 text-lg text-gray-600 leading-8">Nikmati rangkaian minuman premium, pastry hangat, dan camilan yang cocok untuk santai maupun bekerja.</p>
+            </div>
+
+            <div class="grid gap-8 mt-14 md:grid-cols-2">
+                <div class="bg-white rounded-[32px] overflow-hidden shadow-xl border border-beige/60 flex flex-col h-full">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Signature Espresso" class="w-full h-48 object-cover">
+                    <div class="p-6 sm:p-8 flex-1 flex flex-col">
+                        <div class="flex items-start justify-between gap-4">
+                            <h3 class="font-heading text-xl sm:text-2xl text-espresso">Signature Espresso</h3>
+                            <span class="text-gold font-semibold whitespace-nowrap">Rp 32K</span>
+                        </div>
+                        <p class="mt-4 text-gray-600 leading-7 sm:leading-8">Espresso double shot dengan rasa cokelat, karamel, dan aroma yang intens.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-[32px] overflow-hidden shadow-xl border border-beige/60 flex flex-col h-full">
+                    <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=900&q=80" alt="Vanilla Latte" class="w-full h-48 object-cover">
+                    <div class="p-6 sm:p-8 flex-1 flex flex-col">
+                        <div class="flex items-start justify-between gap-4">
+                            <h3 class="font-heading text-xl sm:text-2xl text-espresso">Vanilla Latte</h3>
+                            <span class="text-gold font-semibold whitespace-nowrap">Rp 38K</span>
+                        </div>
+                        <p class="mt-4 text-gray-600 leading-7 sm:leading-8">Latte lembut dengan vanila premium dan foam yang halus.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-[32px] overflow-hidden shadow-xl border border-beige/60 flex flex-col h-full">
+                    <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=900&q=80" alt="Cinnamon Cappuccino" class="w-full h-48 object-cover">
+                    <div class="p-6 sm:p-8 flex-1 flex flex-col">
+                        <div class="flex items-start justify-between gap-4">
+                            <h3 class="font-heading text-xl sm:text-2xl text-espresso">Cinnamon Cappuccino</h3>
+                            <span class="text-gold font-semibold whitespace-nowrap">Rp 36K</span>
+                        </div>
+                        <p class="mt-4 text-gray-600 leading-7 sm:leading-8">Cappuccino hangat dengan sentuhan kayu manis yang khas.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-[32px] overflow-hidden shadow-xl border border-beige/60 flex flex-col h-full">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=80" alt="Iced Maple Coffee" class="w-full h-48 object-cover">
+                    <div class="p-6 sm:p-8 flex-1 flex flex-col">
+                        <div class="flex items-start justify-between gap-4">
+                            <h3 class="font-heading text-xl sm:text-2xl text-espresso">Iced Maple Coffee</h3>
+                            <span class="text-gold font-semibold whitespace-nowrap">Rp 40K</span>
+                        </div>
+                        <p class="mt-4 text-gray-600 leading-7 sm:leading-8">Kopi dingin dengan maple syrup, lembut dan menyegarkan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-[#F8F5F2]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <p class="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-4">Best Seller</p>
+                    <h2 class="font-heading text-4xl lg:text-5xl text-espresso leading-tight">Minuman yang paling sering dipilih pelanggan.</h2>
+                    <p class="mt-6 text-lg text-gray-600 leading-8">Dari kopi klasik hingga variasi modern, setiap minuman dibuat dengan perhatian tinggi pada kualitas rasa dan penyajian.</p>
+                </div>
+                <div class="bg-white rounded-[32px] p-6 sm:p-8 shadow-xl border border-beige/60">
+                    <div class="space-y-6">
+                        <div class="flex flex-col sm:flex-row gap-4 items-start border-b border-gray-200 pb-4">
+                            <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=500&q=80" alt="Caramel Macchiato" class="w-full sm:w-24 h-24 object-cover rounded-2xl">
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start gap-3">
+                                    <h3 class="font-heading text-xl sm:text-2xl text-espresso">Caramel Macchiato</h3>
+                                    <span class="text-gold font-semibold whitespace-nowrap">Rp 42K</span>
+                                </div>
+                                <p class="text-gray-600 mt-2 leading-7">Kopi susu dengan caramel lembut dan foam halus.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4 items-start border-b border-gray-200 pb-4">
+                            <img src="https://images.unsplash.com/photo-1499638673689-79a0b5115d87?auto=format&fit=crop&w=500&q=80" alt="Matcha Cream Latte" class="w-full sm:w-24 h-24 object-cover rounded-2xl">
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start gap-3">
+                                    <h3 class="font-heading text-xl sm:text-2xl text-espresso">Matcha Cream Latte</h3>
+                                    <span class="text-gold font-semibold whitespace-nowrap">Rp 45K</span>
+                                </div>
+                                <p class="text-gray-600 mt-2 leading-7">Matcha premium dengan susu cream yang lembut.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4 items-start">
+                            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=500&q=80" alt="Honey Citrus Tea" class="w-full sm:w-24 h-24 object-cover rounded-2xl">
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start gap-3">
+                                    <h3 class="font-heading text-xl sm:text-2xl text-espresso">Honey Citrus Tea</h3>
+                                    <span class="text-gold font-semibold whitespace-nowrap">Rp 28K</span>
+                                </div>
+                                <p class="text-gray-600 mt-2 leading-7">Teh segar dengan madu dan citrus yang menyegarkan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="bg-gradient-to-r from-espresso to-[#5b3b2c] rounded-[32px] p-10 lg:p-14 text-center text-white">
+                <p class="text-gold uppercase tracking-[0.3em] text-sm font-semibold">Ready to Visit?</p>
+                <h2 class="font-heading text-4xl lg:text-5xl mt-4">Simpan meja Anda sekarang.</h2>
+                <p class="mt-6 text-lg text-white/80 max-w-2xl mx-auto leading-8">Buat reservasi untuk menikmati menu favorit Anda di suasana yang nyaman dan hangat.</p>
+                <a href="reservasi.html" class="inline-block mt-8 bg-gold text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition">Reservasi Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-espresso text-white py-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-sm text-white/80">© 2026 Espresso House. All rights reserved.</p>
+            <div class="flex gap-4 text-sm text-white/80">
+                <a href="index.html" class="hover:text-gold transition">Home</a>
+                <a href="about.html" class="hover:text-gold transition">About</a>
+                <a href="menu.html" class="hover:text-gold transition">Menu</a>
+                <a href="reservasi.html" class="hover:text-gold transition">Reservasi</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
