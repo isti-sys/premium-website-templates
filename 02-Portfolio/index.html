@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katalog Website Premium</title>
+    <meta
+      name="description"
+      content="Katalog koleksi website premium yang siap digunakan untuk landing page, portofolio, dan profil perusahaan."
+    />
+    <style>
+      :root {
+        --bg: #07111f;
+        --surface: #0f1d31;
+        --surface-2: #13253f;
+        --text: #f5f7fb;
+        --muted: #94a3b8;
+        --accent: #38bdf8;
+        --accent-2: #8b5cf6;
+        --border: rgba(255, 255, 255, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+        color: var(--text);
+        background: linear-gradient(135deg, var(--bg), #16253f 60%, #0c172c);
+        min-height: 100vh;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .container {
+        width: min(1120px, calc(100% - 2rem));
+        margin: 0 auto;
+      }
+
+      .hero {
+        padding: 4.5rem 0 2.5rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin: 0 0 1rem;
+        line-height: 1.15;
+      }
+
+      .hero p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: var(--muted);
+        max-width: 700px;
+        margin: 0;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem 0.85rem;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.04);
+        color: #dbeafe;
+        font-size: 0.95rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+        padding: 1rem 0 3rem;
+      }
+
+      .card {
+        background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+        border: 1px solid var(--border);
+        border-radius: 1.1rem;
+        padding: 1.35rem;
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+        backdrop-filter: blur(10px);
+      }
+
+      .card h2 {
+        font-size: 1.15rem;
+        margin: 0 0 0.55rem;
+      }
+
+      .card p {
+        color: var(--muted);
+        line-height: 1.7;
+        margin: 0 0 1rem;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .meta span {
+        display: inline-block;
+        padding: 0.35rem 0.65rem;
+        font-size: 0.8rem;
+        border-radius: 999px;
+        background: rgba(56, 189, 248, 0.16);
+        color: #bae6fd;
+      }
+
+      .actions {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+        border-radius: 0.8rem;
+        font-weight: 600;
+        transition: transform 0.2s ease, background 0.2s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-primary {
+        background: linear-gradient(90deg, var(--accent), var(--accent-2));
+        color: white;
+      }
+
+      .btn-secondary {
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .coming-soon {
+        opacity: 0.8;
+      }
+
+      footer {
+        padding: 0 0 2rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 760px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <div class="pill">✨ Katalog Website Premium</div>
+        <h1>Temukan template website modern yang siap dipakai.</h1>
+        <p>
+          Koleksi ini dirancang untuk kebutuhan landing page, bisnis, portofolio, dan profil perusahaan.
+          Semuanya dibuat dengan tampilan yang rapi, responsif, dan mudah dikustomisasi.
+        </p>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Coffee Shop Premium</h2>
+          <p>
+            Template landing page kafe elegan dengan fitur hero section, menu, galeri, reservasi, dan desain yang menarik untuk branding bisnis kuliner.
+          </p>
+          <div class="meta">
+            <span>Landing Page</span>
+            <span>Responsive</span>
+            <span>Modern UI</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="../01-Landing-Pages/coffee-shop-premium/index.html" target="_blank" rel="noopener noreferrer">Lihat Demo</a>
+            <a class="btn btn-secondary" href="../01-Landing-Pages/coffee-shop-premium/README.md" target="_blank" rel="noopener noreferrer">Lihat Detail</a>
+          </div>
+        </article>
+
+        <article class="card coming-soon">
+          <h2>Company Profile</h2>
+          <p>
+            Segera hadir untuk kebutuhan profil perusahaan, layanan, testimoni, dan halaman kontak yang profesional.
+          </p>
+          <div class="meta">
+            <span>Coming Soon</span>
+            <span>Profil Perusahaan</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-secondary" href="#">Akan tersedia segera</a>
+          </div>
+        </article>
+
+        <article class="card coming-soon">
+          <h2>Portfolio Personal</h2>
+          <p>
+            Template portofolio personal yang cocok untuk freelancer, desainer, developer, dan kreator yang ingin menampilkan karya secara menarik.
+          </p>
+          <div class="meta">
+            <span>Coming Soon</span>
+            <span>Portofolio</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-secondary" href="#">Akan tersedia segera</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Premium Website Templates</p>
+    </footer>
+  </body>
+</html>
