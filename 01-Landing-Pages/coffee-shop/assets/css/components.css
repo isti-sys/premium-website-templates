@@ -1,0 +1,95 @@
+/* ===================================================
+   COMPONENTS
+=================================================== */
+
+/* Navbar */
+
+.navbar-glass{
+
+    backdrop-filter:blur(16px);
+
+    background:rgba(58,42,36,.55);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+/* Section */
+
+.section-title{
+
+    font-size:3rem;
+
+    font-family:"Playfair Display",serif;
+
+    color:#3A2A24;
+
+    margin-bottom:20px;
+
+}
+
+.section-subtitle{
+
+    color:#666;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+/* Card */
+
+.card{
+
+    border-radius:24px;
+
+    background:white;
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 60px rgba(0,0,0,.12);
+
+}
+
+/* Badge */
+
+.badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:#C49A4A;
+
+    color:white;
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+}
+
+/* Footer */
+
+.footer-link{
+
+    transition:.3s;
+
+}
+
+.footer-link:hover{
+
+    color:#C49A4A;
+
+}

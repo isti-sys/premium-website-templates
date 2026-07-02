@@ -1,0 +1,89 @@
+/* ===================================================
+   BASE.CSS
+   Global Reset & Base Style
+=================================================== */
+
+/* Reset */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+    font-family:'Inter',sans-serif;
+    background:#FDFCFB;
+    color:#444;
+    line-height:1.6;
+}
+
+/* Images */
+
+img{
+    display:block;
+    width:100%;
+    max-width:100%;
+    object-fit:cover;
+}
+
+/* Links */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* List */
+
+ul{
+    list-style:none;
+}
+
+/* Button */
+
+button{
+    cursor:pointer;
+    border:none;
+    outline:none;
+}
+
+/* Input */
+
+input,
+textarea{
+    outline:none;
+}
+
+/* Selection */
+
+::selection{
+    background:#C49A4A;
+    color:white;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#F5F2EF;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#C49A4A;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#a97d2d;
+}

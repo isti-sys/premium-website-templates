@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Halaman Tidak Ditemukan | Espresso House</title>
+    <meta name="description" content="Halaman tidak ditemukan. Kembali ke beranda Espresso House.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: "#3A2A24",
+                        beige: "#E9DDCF",
+                        gold: "#C49A4A",
+                        cream: "#FDFCFB"
+                    },
+                    fontFamily: {
+                        heading: ["Playfair Display", "serif"],
+                        body: ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cream font-body text-gray-700">
+    <main class="min-h-screen flex items-center justify-center px-6 py-16">
+        <div class="max-w-2xl text-center bg-white rounded-[32px] shadow-2xl border border-beige/60 p-10 lg:p-14">
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-beige text-gold text-3xl mb-8">
+                <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <p class="text-gold uppercase tracking-[0.3em] text-sm font-semibold">Error 404</p>
+            <h1 class="font-heading text-4xl sm:text-5xl text-espresso mt-4">Halaman yang Anda cari tidak ditemukan.</h1>
+            <p class="mt-6 text-lg text-gray-600 leading-8">
+                Maaf, tautan ini mungkin sudah berpindah atau halaman yang Anda cari belum tersedia.
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="index.html" class="bg-gold text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition">Kembali ke Beranda</a>
+                <a href="menu.html" class="border border-espresso/20 text-espresso px-6 py-3 rounded-full font-semibold hover:bg-espresso hover:text-white transition">Lihat Menu</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

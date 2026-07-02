@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tentang Kami | Espresso House</title>
+
+    <meta name="description"
+        content="Kenali perjalanan Espresso House, filosofi kami, dan bagaimana kami menghadirkan pengalaman menikmati specialty coffee terbaik.">
+
+    <meta name="keywords"
+        content="coffee shop, specialty coffee, espresso house, about">
+
+    <meta name="theme-color"
+        content="#3A2A24">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#3A2A24">
+    <meta name="msapplication-config" content="browserconfig.xml">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+
+        tailwind.config = {
+
+            theme: {
+
+                extend: {
+
+                    colors: {
+
+                        espresso:"#3A2A24",
+
+                        beige:"#E9DDCF",
+
+                        gold:"#C49A4A",
+
+                        cream:"#FDFCFB"
+
+                    },
+
+                    fontFamily:{
+
+                        heading:["Playfair Display"],
+
+                        body:["Inter"]
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body class="bg-cream font-body">
+
+         <!-- ================= NAVBAR ================= -->
+
+    <header id="navbar"
+        class="fixed top-0 left-0 w-full z-50 transition duration-300">
+
+        <nav class="max-w-7xl mx-auto px-6 lg:px-10">
+
+            <div class="flex justify-between items-center h-20">
+
+                <!-- Logo -->
+
+                <a href="index.html" class="text-3xl font-heading font-bold text-white">
+                    Espresso<span class="text-gold">House</span>
+                </a>
+
+                <!-- Desktop Menu -->
+
+                <ul class="hidden md:flex items-center gap-10">
+
+                    <li>
+                        <a href="index.html"
+                            class="text-white hover:text-gold transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="menu.html"
+                            class="text-white hover:text-gold transition">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html"
+                            class="text-gold font-semibold transition">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html"
+                            class="text-white hover:text-gold transition">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Review.html"
+                            class="text-white hover:text-gold transition">
+                            Review
+                        </a>
+                    </li>
+
+                    <li>
+
+                        <a href="reservasi.html"
+                            class="bg-gold text-white px-5 py-3 rounded-full hover:scale-105 transition">
+
+                            Reservasi
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <!-- Mobile Button -->
+
+                <button id="menuButton"
+                    class="text-white text-2xl md:hidden">
+
+                    <i class="fas fa-bars"></i>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+        <!-- Mobile Menu -->
+
+        <div id="mobileMenu"
+            class="hidden bg-white shadow-xl">
+
+            <a href="index.html"
+                class="block px-8 py-4 hover:bg-beige">
+                Home
+            </a>
+
+            <a href="menu.html"
+                class="block px-8 py-4 hover:bg-beige">
+                Menu
+            </a>
+
+            <a href="about.html"
+                class="block px-8 py-4 hover:bg-beige text-gold font-semibold">
+                About
+            </a>
+
+            <a href="gallery.html"
+                class="block px-8 py-4 hover:bg-beige">
+                Gallery
+            </a>
+
+            <a href="Review.html"
+                class="block px-8 py-4 hover:bg-beige">
+                Review
+            </a>
+
+            <a href="reservasi.html"
+                class="block px-8 py-4 hover:bg-beige">
+                Reservasi
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- Hero Banner -->
+<section class="relative h-[70vh] flex items-center overflow-hidden">
+
+    <!-- Background Image -->
+
+    <img
+        src="assets/images/about-hero.webp"
+        alt="Coffee Shop Interior"
+        loading="lazy"
+        class="absolute inset-0 w-full h-full object-cover parallax">
+
+    <!-- Overlay -->
+
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/40"></div>
+
+    <!-- Content -->
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10 w-full">
+
+        <div class="max-w-3xl">
+
+            <span
+                class="inline-flex items-center gap-2 bg-gold text-white px-5 py-2 rounded-full text-sm uppercase tracking-widest">
+
+                Since 2018
+
+            </span>
+
+            <h1
+                class="font-heading text-5xl lg:text-7xl text-white mt-8 leading-tight">
+
+                More Than
+                <span class="text-gold">
+                    Just Coffee
+                </span>
+
+            </h1>
+
+            <p
+                class="mt-8 text-lg text-gray-200 leading-8 max-w-2xl">
+
+                Kami percaya bahwa secangkir kopi bukan hanya minuman,
+                tetapi sebuah pengalaman yang menghadirkan inspirasi,
+                percakapan hangat, dan momen yang layak dikenang.
+
+            </p>
+
+            <!-- Breadcrumb -->
+
+            <div
+                class="flex items-center gap-3 mt-10 text-white">
+
+                <a href="index.html"
+                    class="hover:text-gold transition">
+
+                    Home
+
+                </a>
+
+                <i class="fas fa-chevron-right text-xs"></i>
+
+                <span class="text-gold">
+
+                    About Us
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="relative">
+
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 120">
+
+        <path
+            fill="#FDFCFB"
+            fill-opacity="1"
+            d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,53.3C1120,53,1280,75,1360,85.3L1440,96L1440,120L0,120Z">
+
+        </path>
+
+    </svg>
+
+</div>
+
+    <!-- Our Story -->
+<section class="py-24 bg-cream">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+            <!-- Image -->
+
+            <div class="relative">
+
+                <img
+                    src="assets/images/about-story.webp"
+                    alt="Coffee Brewing"
+                    loading="lazy"
+                    class="rounded-[32px] shadow-2xl">
+
+                <!-- Floating Card -->
+
+                <div
+                    class="absolute -bottom-8 -right-8 bg-white rounded-3xl p-8 shadow-2xl hidden md:block">
+
+                    <h3
+                        class="text-5xl font-bold text-gold">
+
+                        8+
+
+                    </h3>
+
+                    <p
+                        class="mt-2 text-gray-600">
+
+                        Tahun Menyajikan
+                        Specialty Coffee
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Content -->
+
+            <div>
+
+                <span
+                    class="uppercase tracking-[4px] text-gold font-semibold">
+
+                    Our Story
+
+                </span>
+
+                <h2
+                    class="font-heading text-5xl text-espresso mt-5 leading-tight">
+
+                    Berawal Dari Sebuah
+                    <span class="text-gold">
+
+                        Passion
+
+                    </span>
+
+                    Terhadap Kopi.
+
+                </h2>
+
+                <p
+                    class="mt-8 text-gray-600 leading-9">
+
+                    Espresso House lahir dari kecintaan terhadap kopi
+                    Nusantara dan keinginan menghadirkan tempat yang
+                    nyaman bagi siapa saja untuk menikmati secangkir
+                    kopi berkualitas.
+
+                </p>
+
+                <p
+                    class="mt-6 text-gray-600 leading-9">
+
+                    Kami percaya bahwa kopi terbaik bukan hanya berasal
+                    dari biji pilihan, tetapi juga dari proses roasting,
+                    penyeduhan, dan pelayanan yang dilakukan dengan
+                    sepenuh hati.
+
+                </p>
+
+                <div
+                    class="grid grid-cols-2 gap-8 mt-12">
+
+                    <div>
+
+                        <h3
+                            class="text-4xl font-bold text-gold">
+
+                            50K+
+
+                        </h3>
+
+                        <p class="mt-2 text-gray-600">
+
+                            Cups Served
+
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h3
+                            class="text-4xl font-bold text-gold">
+
+                            4.9★
+
+                        </h3>
+
+                        <p class="mt-2 text-gray-600">
+
+                            Customer Rating
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Our Philosophy -->
+<section class="py-24 bg-[#F8F5F2]">
+
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+<div class="text-center">
+
+<span
+class="uppercase tracking-[4px] text-gold font-semibold">
+
+Our Philosophy
+
+</span>
+
+<h2
+class="font-heading text-5xl text-espresso mt-5">
+
+Apa yang Kami Percaya
+
+</h2>
+
+<p
+class="max-w-3xl mx-auto mt-6 text-gray-600 leading-8">
+
+Kami percaya bahwa setiap detail,
+mulai dari pemilihan biji kopi hingga
+senyuman barista, menciptakan pengalaman
+yang tak terlupakan.
+
+</p>
+
+</div>
+
+<div
+class="grid lg:grid-cols-3 gap-8 mt-16">
+
+<!-- Card -->
+
+<div
+class="bg-white rounded-3xl p-10 shadow-lg hover:-translate-y-3 transition">
+
+<div
+class="w-20 h-20 rounded-full bg-beige flex items-center justify-center">
+
+<i class="fas fa-seedling text-gold text-3xl"></i>
+
+</div>
+
+<h3
+class="font-heading text-3xl text-espresso mt-8">
+
+Quality First
+
+</h3>
+
+<p
+class="mt-5 text-gray-600 leading-8">
+
+Kami hanya menggunakan specialty coffee
+grade terbaik dari berbagai daerah
+di Indonesia.
+
+</p>
+
+</div>
+
+<!-- Card -->
+
+<div
+class="bg-white rounded-3xl p-10 shadow-lg hover:-translate-y-3 transition">
+
+<div
+class="w-20 h-20 rounded-full bg-beige flex items-center justify-center">
+
+<i class="fas fa-heart text-gold text-3xl"></i>
+
+</div>
+
+<h3
+class="font-heading text-3xl text-espresso mt-8">
+
+Serve With Passion
+
+</h3>
+
+<p
+class="mt-5 text-gray-600 leading-8">
+
+Setiap minuman dibuat dengan penuh perhatian
+agar menghasilkan cita rasa yang konsisten.
+
+</p>
+
+</div>
+
+<!-- Card -->
+
+<div
+class="bg-white rounded-3xl p-10 shadow-lg hover:-translate-y-3 transition">
+
+<div
+class="w-20 h-20 rounded-full bg-beige flex items-center justify-center">
+
+<i class="fas fa-mug-hot text-gold text-3xl"></i>
+
+</div>
+
+<h3
+class="font-heading text-3xl text-espresso mt-8">
+
+Coffee Experience
+
+</h3>
+
+<p
+class="mt-5 text-gray-600 leading-8">
+
+Kami ingin setiap pelanggan pulang
+dengan pengalaman yang hangat,
+bukan hanya secangkir kopi.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+    <!-- Meet Our Baristas -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <p class="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-4">
+                    Meet Our Baristas
+                </p>
+                <h2 class="font-heading text-4xl lg:text-5xl text-espresso leading-tight">
+                    Para ahli kopi yang membawa sentuhan seni ke setiap sajian.
+                </h2>
+                <p class="mt-6 text-lg text-gray-600 leading-8">
+                    Setiap minuman dibuat dengan ketelitian, kreativitas, dan senyum hangat dari tim barista kami yang berpengalaman.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-cream rounded-3xl p-8 shadow-lg border border-beige/60 text-center">
+                    <div class="w-24 h-24 rounded-full mx-auto bg-beige flex items-center justify-center text-4xl text-gold">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl text-espresso mt-6">Ayu Pratama</h3>
+                    <p class="text-gold font-semibold mt-2">Head Barista</p>
+                    <p class="mt-4 text-gray-600 leading-7">
+                        Menggabungkan teknik espresso dan storytelling rasa untuk menciptakan pengalaman kopi yang personal.
+                    </p>
+                </div>
+
+                <div class="bg-cream rounded-3xl p-8 shadow-lg border border-beige/60 text-center">
+                    <div class="w-24 h-24 rounded-full mx-auto bg-beige flex items-center justify-center text-4xl text-gold">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl text-espresso mt-6">Raka Dharma</h3>
+                    <p class="text-gold font-semibold mt-2">Latte Artist</p>
+                    <p class="mt-4 text-gray-600 leading-7">
+                        Ahli menciptakan latte art yang cantik dan konsisten, menghadirkan estetika di setiap gelas.
+                    </p>
+                </div>
+
+                <div class="bg-cream rounded-3xl p-8 shadow-lg border border-beige/60 text-center">
+                    <div class="w-24 h-24 rounded-full mx-auto bg-beige flex items-center justify-center text-4xl text-gold">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl text-espresso mt-6">Nadia Sari</h3>
+                    <p class="text-gold font-semibold mt-2">Coffee Curator</p>
+                    <p class="mt-4 text-gray-600 leading-7">
+                        Bertanggung jawab pada pemilihan biji dan profil rasa yang cocok untuk setiap pelanggan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Journey Timeline -->
+    <section class="py-20 bg-[#F8F5F2]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <p class="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-4">
+                    Coffee Journey Timeline
+                </p>
+                <h2 class="font-heading text-4xl lg:text-5xl text-espresso leading-tight">
+                    Jejak perjalanan kami dalam menyajikan kopi terbaik.
+                </h2>
+                <p class="mt-6 text-lg text-gray-600 leading-8">
+                    Dari awal yang sederhana hingga menjadi tempat favorit pecinta kopi, setiap langkah kami dibangun dengan kualitas dan cinta.
+                </p>
+            </div>
+
+            <div class="mt-16 relative">
+                <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-1 bg-gold/30 -translate-x-1/2"></div>
+
+                <div class="space-y-12">
+                    <div class="grid lg:grid-cols-2 gap-10 items-center">
+                        <div class="lg:text-right">
+                            <p class="text-gold font-semibold text-sm uppercase tracking-[0.25em]">2018</p>
+                            <h3 class="font-heading text-2xl text-espresso mt-2">Awal Perjalanan</h3>
+                            <p class="mt-4 text-gray-600 leading-8">
+                                Espresso House pertama kali dibuka dengan misi menghadirkan kopi specialty yang dekat dengan komunitas lokal.
+                            </p>
+                        </div>
+                        <div class="lg:pl-10">
+                            <div class="bg-white rounded-3xl p-8 shadow-lg border border-beige/60">
+                                <div class="text-gold text-2xl mb-3">
+                                    <i class="fa-solid fa-store"></i>
+                                </div>
+                                <p class="text-gray-600 leading-7">
+                                    Memulai dari ruang kecil yang penuh semangat, fokus pada rasa, suasana, dan keramahan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid lg:grid-cols-2 gap-10 items-center">
+                        <div class="lg:order-2 lg:pl-10">
+                            <p class="text-gold font-semibold text-sm uppercase tracking-[0.25em]">2021</p>
+                            <h3 class="font-heading text-2xl text-espresso mt-2">Berkembang Menjadi Komunitas</h3>
+                            <p class="mt-4 text-gray-600 leading-8">
+                                Kami memperluas ruang dan menu, menciptakan tempat yang cocok untuk bekerja, bertemu, dan berbagi cerita.
+                            </p>
+                        </div>
+                        <div class="lg:order-1 lg:text-right lg:pr-10">
+                            <div class="bg-white rounded-3xl p-8 shadow-lg border border-beige/60">
+                                <div class="text-gold text-2xl mb-3">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                                <p class="text-gray-600 leading-7">
+                                    Menjadi rumah bagi para pecinta kopi, kreator, dan komunitas yang menghargai kualitas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid lg:grid-cols-2 gap-10 items-center">
+                        <div class="lg:text-right">
+                            <p class="text-gold font-semibold text-sm uppercase tracking-[0.25em]">2024</p>
+                            <h3 class="font-heading text-2xl text-espresso mt-2">Menuju Standar Premium</h3>
+                            <p class="mt-4 text-gray-600 leading-8">
+                                Kami terus meningkatkan kualitas biji, penyajian, dan pengalaman pelanggan melalui sentuhan yang lebih personal.
+                            </p>
+                        </div>
+                        <div class="lg:pl-10">
+                            <div class="bg-white rounded-3xl p-8 shadow-lg border border-beige/60">
+                                <div class="text-gold text-2xl mb-3">
+                                    <i class="fa-solid fa-mug-hot"></i>
+                                </div>
+                                <p class="text-gray-600 leading-7">
+                                    Menyajikan pengalaman kopi premium yang modern, nyaman, dan tetap hangat untuk setiap kunjungan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <p class="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-4">
+                    Statistics
+                </p>
+                <h2 class="font-heading text-4xl lg:text-5xl text-espresso leading-tight">
+                    Angka yang menggambarkan komitmen kami terhadap kualitas.
+                </h2>
+                <p class="mt-6 text-lg text-gray-600 leading-8">
+                    Setiap angka di bawah ini adalah cerminan dari dedikasi tim kami dalam menyajikan kopi dan pengalaman terbaik.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
+                <div class="bg-white rounded-3xl p-8 shadow-lg border border-beige/60 text-center">
+                    <h3 class="text-5xl font-bold text-gold">50K+</h3>
+                    <p class="mt-3 text-gray-600">Cups Served</p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 shadow-lg border border-beige/60 text-center">
+                    <h3 class="text-5xl font-bold text-gold">8+</h3>
+                    <p class="mt-3 text-gray-600">Years of Experience</p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 shadow-lg border border-beige/60 text-center">
+                    <h3 class="text-5xl font-bold text-gold">4.9★</h3>
+                    <p class="mt-3 text-gray-600">Customer Rating</p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 shadow-lg border border-beige/60 text-center">
+                    <h3 class="text-5xl font-bold text-gold">100%</h3>
+                    <p class="mt-3 text-gray-600">Passion Driven</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-gradient-to-r from-espresso via-[#4a332b] to-[#6d4a34]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="bg-white/10 backdrop-blur-md rounded-[32px] border border-white/20 px-8 py-16 lg:px-14 lg:py-20 text-center">
+                <p class="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-4">
+                    Visit Espresso House
+                </p>
+                <h2 class="font-heading text-4xl lg:text-5xl text-white leading-tight">
+                    Nikmati secangkir kopi terbaik dan suasana yang hangat.
+                </h2>
+                <p class="mt-6 text-lg text-gray-200 leading-8 max-w-3xl mx-auto">
+                    Datanglah ke Espresso House, temukan tempat yang nyaman untuk bersantai, bekerja, dan menikmati momen bersama orang-orang terkasih.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 mt-10">
+                    <a href="index.html#contact"
+                        class="bg-gold text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
+                        Reservasi Sekarang
+                    </a>
+                    <a href="index.html"
+                        class="border border-white/30 text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-espresso transition">
+                        Kembali ke Beranda
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Gunakan footer yang sama seperti index.html -->
+
+
+
+    <!-- JS -->
+
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

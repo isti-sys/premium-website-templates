@@ -1,0 +1,75 @@
+/* ===================================================
+   UTILITIES
+=================================================== */
+
+/* Shadow */
+
+.shadow-soft{
+
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+}
+
+.shadow-medium{
+
+    box-shadow:0 30px 80px rgba(0,0,0,.12);
+
+}
+
+/* Glass */
+
+.glass{
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,.1);
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+/* Gradient */
+
+.gold-gradient{
+
+    background:linear-gradient(
+    135deg,
+    #D7AE5A,
+    #C49A4A
+    );
+
+}
+
+/* Rounded */
+
+.round-xl{
+
+    border-radius:30px;
+
+}
+
+/* Transition */
+
+.transition-fast{
+
+    transition:.3s;
+
+}
+
+.transition-medium{
+
+    transition:.5s;
+
+}
+
+/* Overlay */
+
+.overlay-dark{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+}
